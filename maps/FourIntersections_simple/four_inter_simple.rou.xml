@@ -1,0 +1,114 @@
+
+<routes>
+
+  <vType id="car" length="5.0" minGap="2.0" maxSpeed="30.0" vClass="passenger">
+      <carFollowing-Krauss accel="3.0" decel="5.0" sigma="0" tau="1.64" />
+  </vType>
+
+  <vType id="emergency" length="10.0" minGap="2.0" maxSpeed="30.0" vClass="emergency">
+      <carFollowing-Krauss accel="3.0" decel="5.0" sigma="0" tau="1.64" />
+  </vType>
+
+  <vType id="bus" length="10.0" minGap="4.0" maxSpeed="15.0" vClass="bus">
+      <carFollowing-Krauss accel="2.0" decel="3.0" sigma="0" tau="2.0" />
+  </vType>
+
+  <vType id="truck" length="10.0" minGap="4.0" maxSpeed="15.0" vClass="truck">
+      <carFollowing-Krauss accel="2.0" decel="3.0" sigma="0" tau="2.0" />
+  </vType>
+
+  <vType id="bicycle" length="1.6" width="0.6" minGap="0.5" maxSpeed="4.2" vClass="bicycle" guiShape="bicycle">
+  </vType>
+
+  <vType id="pedestrian" length="0.3" width="0.6" minGap="1.5" maxSpeed="1.4" vClass="pedestrian" guiShape="pedestrian" color="red">
+  </vType>
+
+  <vType id="type1">
+	  <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="4" ccAccel="1.5"/>
+  </vType>
+
+  <vType id="type2">
+	  <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="4" ccAccel="1.5"/>
+  </vType>
+
+  <!-- INTERSECTION 1 -->
+  <!-- North inbound -->
+  <route id="throughN_S" edges="NC CS" />                 					<!-- Through to S-->
+
+  <!-- South inbound -->
+  <route id="throughS_N" edges="SC CN" />                 					<!-- Through to N-->
+
+  <!-- West inbound -->
+  <route id="throughW_E4" edges="WC link_C_C2 link_C2_C3 link_C3_C4 CE4" /> <!-- Through to E4-->
+
+
+  <!-- INTERSECTION 2 -->
+  <!-- North inbound -->
+  <route id="throughN2_S2" edges="NC2 CS2" />              					<!-- Through to S2-->
+
+  <!-- South inbound -->
+  <route id="throughS2_N2" edges="SC2 CN2" />              					<!-- Through to N2-->
+
+
+  <!-- INTERSECTION 3 -->
+  <!-- North inbound -->
+  <route id="throughN3_S3" edges="NC3 CS3" />              					<!-- Through to S3-->
+
+  <!-- South inbound -->
+  <route id="throughS3_N3" edges="SC3 CN3" />              					<!-- Through to N3-->
+
+
+  <!-- INTERSECTION 4 -->
+  <!-- North inbound -->
+  <route id="throughN4_S4" edges="NC4 CS4" />                 				<!-- Through to S4-->
+
+  <!-- South inbound -->
+  <route id="throughS4_N4" edges="SC4 CN4" />                 				<!-- Through to N4-->
+
+  <!-- East inbound -->
+  <route id="throughE4_W" edges="EC4 link_C4_C3 link_C3_C2 link_C2_C CW" /> <!-- Through to N2-->
+  
+
+  <flow id="flow_throughW_E4" route="throughW_E4" begin="0" end="25000" vehsPerHour="1000" departSpeed="max" departPos="base" departLane="best"/>
+<!-- 
+  <flow id="flow_throughE4_W" route="throughE4_W" begin="0" end="25000" vehsPerHour="500" departSpeed="max" departPos="base" departLane="best"/>
+
+
+  <flow id="flow_throughN_S" route="throughN_S" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughS_N" route="throughS_N" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+
+  <flow id="flow_throughN2_S2" route="throughN2_S2" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughS2_N2" route="throughS2_N2" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+
+  <flow id="flow_throughN3_S3" route="throughN3_S3" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughS3_N3" route="throughS3_N3" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  
+  <flow id="flow_throughS4_N4" route="throughS4_N4" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughN4_S4" route="throughN4_S4" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+-->
+
+<!-- 
+  <vType id="test_1" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="50"/>
+
+  <vehicle id="0" type="test_1" route="throughW_E4" depart="0.0" departSpeed="max" departLane="1"/>
+  <vehicle id="1" type="test_1" route="throughW_E4" depart="1.0" departSpeed="max" departLane="1"/>
+  <vehicle id="2" type="test_1" route="throughW_E4" depart="2.0" departSpeed="max" departLane="1"/>
+  <vehicle id="3" type="test_1" route="throughW_E4" depart="3.0" departSpeed="max" departLane="1"/>
+  <vehicle id="4" type="test_1" route="throughW_E4" depart="4.0" departSpeed="max" departLane="1"/>
+  <vehicle id="5" type="test_1" route="throughW_E4" depart="5.0" departSpeed="max" departLane="1"/>
+
+  <vehicle id="6" type="test_1" route="throughW_E4" depart="6.0" departSpeed="max" departLane="1"/>
+  <vehicle id="7" type="test_1" route="throughW_E4" depart="7.0" departSpeed="max" departLane="1"/>
+  <vehicle id="8" type="test_1" route="throughW_E4" depart="8.0" departSpeed="max" departLane="1"/>
+  <vehicle id="9" type="test_1" route="throughW_E4" depart="9.0" departSpeed="max" departLane="1"/>
+  <vehicle id="10" type="test_1" route="throughW_E4" depart="10.0" departSpeed="max" departLane="1"/>
+  <vehicle id="11" type="test_1" route="throughW_E4" depart="11.0" departSpeed="max" departLane="1"/>
+
+  <vehicle id="12" type="test_1" route="throughW_E4" depart="12.0" departSpeed="max" departLane="3"/>
+  <vehicle id="13" type="test_1" route="throughW_E4" depart="13.0" departSpeed="max" departLane="3"/>
+  <vehicle id="14" type="test_1" route="throughW_E4" depart="14.0" departSpeed="max" departLane="3"/>
+  <vehicle id="15" type="test_1" route="throughW_E4" depart="15.0" departSpeed="max" departLane="3"/>
+  <vehicle id="16" type="test_1" route="throughW_E4" depart="16.0" departSpeed="max" departLane="3"/>
+  <vehicle id="17" type="test_1" route="throughW_E4" depart="17.0" departSpeed="max" departLane="3"/>
+-->
+</routes>

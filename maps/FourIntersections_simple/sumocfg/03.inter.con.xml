@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connections>
+    <!-- intersection 1 -->
+    <connection from="NC" to="CS" fromLane="0" toLane="0" />
+    <connection from="NC" to="CS" fromLane="1" toLane="1" />
+
+    <connection from="SC" to="CN" fromLane="0" toLane="0" />
+    <connection from="SC" to="CN" fromLane="1" toLane="1" />
+
+    <connection from="link_C2_C" to="CW" fromLane="0" toLane="0" />
+    <connection from="link_C2_C" to="CW" fromLane="1" toLane="1" />
+    
+    <connection from="WC" to="link_C_C2" fromLane="0" toLane="0" />
+    <connection from="WC" to="link_C_C2" fromLane="1" toLane="1" />
+
+
+    <!-- intersection 2 -->
+    <connection from="NC2" to="CS2" fromLane="0" toLane="0" />
+    <connection from="NC2" to="CS2" fromLane="1" toLane="1" />
+
+    <connection from="SC2" to="CN2" fromLane="0" toLane="0" />
+    <connection from="SC2" to="CN2" fromLane="1" toLane="1" />
+
+    <connection from="link_C3_C2" to="link_C2_C" fromLane="0" toLane="0" />
+    <connection from="link_C3_C2" to="link_C2_C" fromLane="1" toLane="1" />
+    
+    <connection from="link_C_C2" to="link_C2_C3" fromLane="0" toLane="0" />
+    <connection from="link_C_C2" to="link_C2_C3" fromLane="1" toLane="1" />
+
+
+    <!-- intersection 3 -->
+    <connection from="NC3" to="CS3" fromLane="0" toLane="0" />
+    <connection from="NC3" to="CS3" fromLane="1" toLane="1" />
+
+    <connection from="SC3" to="CN3" fromLane="0" toLane="0" />
+    <connection from="SC3" to="CN3" fromLane="1" toLane="1" />
+
+    <connection from="link_C4_C3" to="link_C3_C2" fromLane="0" toLane="0" />
+    <connection from="link_C4_C3" to="link_C3_C2" fromLane="1" toLane="1" />
+
+    <connection from="link_C2_C3" to="link_C3_C4" fromLane="0" toLane="0" />
+    <connection from="link_C2_C3" to="link_C3_C4" fromLane="1" toLane="1" />
+
+
+    <!-- intersection 4 -->
+    <connection from="NC4" to="CS4" fromLane="0" toLane="0" />
+    <connection from="NC4" to="CS4" fromLane="1" toLane="1" />
+
+    <connection from="SC4" to="CN4" fromLane="0" toLane="0" />
+    <connection from="SC4" to="CN4" fromLane="1" toLane="1" />
+
+    <connection from="EC4" to="link_C4_C3" fromLane="0" toLane="0" />
+    <connection from="EC4" to="link_C4_C3" fromLane="1" toLane="1" />
+
+    <connection from="link_C3_C4" to="CE4" fromLane="0" toLane="0" />
+    <connection from="link_C3_C4" to="CE4" fromLane="1" toLane="1" />
+
+
+	<!-- Pedestrians -->
+	<crossing node="C" edges="CN NC" priority="1" />
+    <crossing node="C" edges="CS SC" priority="1" />
+    <crossing node="C" edges="link_C_C2 link_C2_C" priority="1" />
+    <crossing node="C" edges="CW WC" priority="1" />
+
+	<crossing node="C2" edges="CN2 NC2" priority="1" />
+    <crossing node="C2" edges="CS2 SC2" priority="1" />
+    <crossing node="C2" edges="link_C2_C3 link_C3_C2" priority="1" />
+    <crossing node="C2" edges="link_C2_C link_C_C2" priority="1" />
+
+	<crossing node="C3" edges="CN3 NC3" priority="1" />
+    <crossing node="C3" edges="CS3 SC3" priority="1" />
+    <crossing node="C3" edges="link_C3_C4 link_C4_C3" priority="1" />
+    <crossing node="C3" edges="link_C3_C2 link_C2_C3" priority="1" />
+
+	<crossing node="C4" edges="CN4 NC4" priority="1" />
+    <crossing node="C4" edges="CS4 SC4" priority="1" />
+    <crossing node="C4" edges="CE4 EC4" priority="1" />
+    <crossing node="C4" edges="link_C4_C3 link_C3_C4" priority="1" />
+</connections>
+

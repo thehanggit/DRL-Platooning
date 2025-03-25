@@ -1,0 +1,1 @@
+netconvert --node-files=01.inter.nod.xml --edge-files=02.inter.edg.xml --output-file=04.inter.net.xml --connection-files=03.inter.con.xml

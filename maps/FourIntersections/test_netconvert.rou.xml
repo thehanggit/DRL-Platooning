@@ -1,0 +1,194 @@
+
+<routes>
+
+  <vType id="car" length="5.0" minGap="2.0" maxSpeed="30.0" vClass="passenger">
+      <carFollowing-Krauss accel="3.0" decel="5.0" sigma="0" tau="1.64" />
+  </vType>
+
+  <vType id="emergency" length="10.0" minGap="2.0" maxSpeed="30.0" vClass="emergency">
+      <carFollowing-Krauss accel="3.0" decel="5.0" sigma="0" tau="1.64" />
+  </vType>
+
+  <vType id="bus" length="10.0" minGap="4.0" maxSpeed="15.0" vClass="bus">
+      <carFollowing-Krauss accel="2.0" decel="3.0" sigma="0" tau="2.0" />
+  </vType>
+
+  <vType id="truck" length="10.0" minGap="4.0" maxSpeed="15.0" vClass="truck">
+      <carFollowing-Krauss accel="2.0" decel="3.0" sigma="0" tau="2.0" />
+  </vType>
+
+  <vType id="bicycle" length="1.6" width="0.6" minGap="0.5" maxSpeed="4.2" vClass="bicycle" guiShape="bicycle">
+  </vType>
+
+  <vType id="pedestrian" length="0.3" width="0.6" minGap="1.5" maxSpeed="1.4" vClass="pedestrian" guiShape="pedestrian" color="red">
+  </vType>
+
+  <vType id="type1">
+	  <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="4" ccAccel="1.5"/>
+  </vType>
+
+  <vType id="type2">
+	  <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="4" ccAccel="1.5"/>
+  </vType>
+
+  <!-- INTERSECTION 1 -->
+  <!-- North inbound -->
+  <route id="throughN_S" edges="NC CS" />                 					<!-- Through to S-->
+  <route id="rightN_W" edges="NC CW" />                   					<!-- Right to W-->
+  <route id="leftN_N2" edges="NC link_C_C2 CN2" />      					<!-- Left to N2-->
+  <route id="leftN_S2" edges="NC link_C_C2 CS2" />      					<!-- Left to S2-->
+  <route id="leftN_N3" edges="NC link_C_C2 link_C2_C3 CN3" />      			<!-- Left to N3-->
+  <route id="leftN_S3" edges="NC link_C_C2 link_C2_C3 CS3" />      			<!-- Left to S3-->
+  <route id="leftN_N4" edges="NC link_C_C2 link_C2_C3 link_C3_C4 CN4" />	<!-- Left to N4-->
+  <route id="leftN_S4" edges="NC link_C_C2 link_C2_C3 link_C3_C4 CS4" /> 	<!-- Left to S4-->
+  <route id="leftN_E4" edges="NC link_C_C2 link_C2_C3 link_C3_C4 CE4" /> 	<!-- Left to E4-->
+
+  <!-- South inbound -->
+  <route id="throughS_N" edges="SC CN" />                 					<!-- Through to N-->
+  <route id="leftS_W" edges="SC CW" />                    					<!-- Left to W-->
+  <route id="rightS_N2" edges="SC link_C_C2 CN2" />     					<!-- Right to N2-->
+  <route id="rightS_S2" edges="SC link_C_C2 CS2" />     					<!-- Right to S2-->
+  <route id="rightS_N3" edges="SC link_C_C2 link_C2_C3 CN3" />      		<!-- Right to N3-->
+  <route id="rightS_S3" edges="SC link_C_C2 link_C2_C3 CS3" />      		<!-- Right to S3-->
+  <route id="rightS_N4" edges="SC link_C_C2 link_C2_C3 link_C3_C4 CN4" />	<!-- Right to N4-->
+  <route id="rightS_S4" edges="SC link_C_C2 link_C2_C3 link_C3_C4 CS4" /> 	<!-- Right to S4-->
+  <route id="rightS_E4" edges="SC link_C_C2 link_C2_C3 link_C3_C4 CE4" /> 	<!-- Right to E4-->
+
+  <!-- West inbound -->
+  <route id="rightW_S" edges="WC CS" />                   					<!-- Right to S-->
+  <route id="leftW_N" edges="WC CN" />                    					<!-- Left to N-->
+  <route id="throughW_N2" edges="WC link_C_C2 CN2" />   					<!-- Through to N2-->
+  <route id="throughW_S2" edges="WC link_C_C2 CS2" />   					<!-- Through to S2-->
+  <route id="throughW_N3" edges="WC link_C_C2 link_C2_C3 CN3" />      		<!-- Through to N3-->
+  <route id="throughW_S3" edges="WC link_C_C2 link_C2_C3 CS3" />      		<!-- Through to S3-->
+  <route id="throughW_N4" edges="WC link_C_C2 link_C2_C3 link_C3_C4 CN4" />	<!-- Through to N4-->
+  <route id="throughW_S4" edges="WC link_C_C2 link_C2_C3 link_C3_C4 CS4" /> <!-- Through to S4-->
+  <route id="throughW_E4" edges="WC link_C_C2 link_C2_C3 link_C3_C4 CE4" /> <!-- Through to E4-->
+
+
+  <!-- INTERSECTION 2 -->
+  <!-- North inbound -->
+  <route id="throughN2_S2" edges="NC2 CS2" />              					<!-- Through to S2-->
+  <route id="leftN2_N3" edges="NC2 link_C2_C3 CN3" />                 		<!-- Left to N3-->
+  <route id="leftN2_S3" edges="NC2 link_C2_C3 CS3" />                 		<!-- Left to S3 -->
+  <route id="leftN2_N4" edges="NC2 link_C2_C3 link_C3_C4 CN4" />            <!-- Left to N4-->
+  <route id="leftN2_S4" edges="NC2 link_C2_C3 link_C3_C4 CS4" />            <!-- Left to S4-->
+  <route id="leftN2_E4" edges="NC2 link_C2_C3 link_C3_C4 CE4" />            <!-- Left to E4-->
+  <route id="rightN2_W" edges="NC2 link_C2_C CW" />     					<!-- Right to W-->
+  <route id="rightN2_S" edges="NC2 link_C2_C CS" />     					<!-- Right to S-->
+  <route id="rightN2_N" edges="NC2 link_C2_C CN" />     					<!-- Right to N-->
+
+  <!-- South inbound -->
+  <route id="throughS2_N2" edges="SC2 CN2" />              					<!-- Through to N2-->
+  <route id="rightS2_N3" edges="SC2 link_C2_C3 CN3" />                		<!-- Right to N3-->
+  <route id="rightS2_S3" edges="SC2 link_C2_C3 CS3" />                 		<!-- Right to S3 -->
+  <route id="rightS2_N4" edges="SC2 link_C2_C3 link_C3_C4 CN4" />           <!-- Right to N4-->
+  <route id="rightS2_S4" edges="SC2 link_C2_C3 link_C3_C4 CS4" />           <!-- Right to S4-->
+  <route id="rightS2_E4" edges="SC2 link_C2_C3 link_C3_C4 CE4" />           <!-- Right to E4-->
+  <route id="leftS2_W" edges="SC2 link_C2_C CW" />      					<!-- Left to W -->
+  <route id="leftS2_N" edges="SC2 link_C2_C CN" />      					<!-- Left to N -->
+  <route id="leftS2_S" edges="SC2 link_C2_C CS" />      					<!-- Left to S -->
+
+
+  <!-- INTERSECTION 3 -->
+  <!-- North inbound -->
+  <route id="throughN3_S3" edges="NC3 CS3" />              					<!-- Through to S3-->
+  <route id="leftN3_N4" edges="NC3 link_C3_C4 CN4" />            			<!-- Left to N4-->
+  <route id="leftN3_S4" edges="NC3 link_C3_C4 CS4" />            			<!-- Left to S4-->
+  <route id="leftN3_E4" edges="NC3 link_C3_C4 CE4" />            			<!-- Left to E4-->
+  <route id="rightN3_N2" edges="NC3 link_C3_C2 CN2" />     					<!-- Right to N2-->
+  <route id="rightN3_S2" edges="NC3 link_C3_C2 CS2" />     					<!-- Right to S2-->
+  <route id="rightN3_N" edges="NC3 link_C3_C2 link_C2_C CN" />     			<!-- Right to N-->
+  <route id="rightN3_S" edges="NC3 link_C3_C2 link_C2_C CS" />     			<!-- Right to S-->
+  <route id="rightN3_W" edges="NC3 link_C3_C2 link_C2_C CW" />     			<!-- Right to W-->
+
+  <!-- South inbound -->
+  <route id="throughS3_N3" edges="SC3 CN3" />              					<!-- Through to N3-->
+  <route id="rightS3_N4" edges="SC3 link_C3_C4 CN4" />            			<!-- Right to N4-->
+  <route id="rightS3_S4" edges="SC3 link_C3_C4 CS4" />            			<!-- Right to S4-->
+  <route id="rightS3_E4" edges="SC3 link_C3_C4 CE4" />            			<!-- Right to E4-->
+  <route id="leftS3_N2" edges="SC3 link_C3_C2 CN2" />     					<!-- Left to N2-->
+  <route id="leftS3_S2" edges="SC3 link_C3_C2 CS2" />     					<!-- Left to S2-->
+  <route id="leftS3_N" edges="SC3 link_C3_C2 link_C2_C CN" />     			<!-- Left to N-->
+  <route id="leftS3_S" edges="SC3 link_C3_C2 link_C2_C CS" />     			<!-- Left to S-->
+  <route id="leftS3_W" edges="SC3 link_C3_C2 link_C2_C CW" />     			<!-- Left to W-->
+
+
+  <!-- INTERSECTION 4 -->
+  <!-- North inbound -->
+  <route id="throughN4_S4" edges="NC4 CS4" />                 				<!-- Through to S4-->
+  <route id="leftN4_E4" edges="NC4 CE4" />                   				<!-- Left to E4-->
+  <route id="rightN4_N3" edges="NC4 link_C4_C3 CN3" />      				<!-- Right to N2-->
+  <route id="rightN4_S3" edges="NC4 link_C4_C3 CS3" />      				<!-- Right to S2-->
+  <route id="rightN4_N2" edges="NC4 link_C4_C3 link_C3_C2 CN2" />      		<!-- Right to N3-->
+  <route id="rightN4_S2" edges="NC4 link_C4_C3 link_C3_C2 CS2" />      		<!-- Right to S3-->
+  <route id="rightN4_N" edges="NC4 link_C4_C3 link_C3_C2 link_C2_C CN" />	<!-- Right to N4-->
+  <route id="rightN4_S" edges="NC4 link_C4_C3 link_C3_C2 link_C2_C CS" /> 	<!-- Right to S4-->
+  <route id="rightN4_W" edges="NC4 link_C4_C3 link_C3_C2 link_C2_C CW" /> 	<!-- Right to E4-->
+
+  <!-- South inbound -->
+  <route id="throughS4_N4" edges="SC4 CN4" />                 				<!-- Through to N4-->
+  <route id="rightS4_E4" edges="SC4 CE4" />                   				<!-- Right to E4-->
+  <route id="leftS4_N3" edges="SC4 link_C4_C3 CN3" />      					<!-- Left to N3-->
+  <route id="leftS4_S3" edges="SC4 link_C4_C3 CS3" />      					<!-- Left to S3-->
+  <route id="leftS4_N2" edges="SC4 link_C4_C3 link_C3_C2 CN2" />      		<!-- Left to N2-->
+  <route id="leftS4_S2" edges="SC4 link_C4_C3 link_C3_C2 CS2" />      		<!-- Left to S2-->
+  <route id="leftS4_N" edges="SC4 link_C4_C3 link_C3_C2 link_C2_C CN" />	<!-- Left to N-->
+  <route id="leftS4_S" edges="SC4 link_C4_C3 link_C3_C2 link_C2_C CS" /> 	<!-- Left to S-->
+  <route id="leftS4_W" edges="SC4 link_C4_C3 link_C3_C2 link_C2_C CW" /> 	<!-- Left to W-->
+
+  <!-- East inbound -->
+  <route id="rightE4_N" edges="EC4 CN4" />                   				<!-- Right to N4-->
+  <route id="leftE4_S" edges="EC4 CS4" />                    				<!-- Left to S4-->
+  <route id="throughE4_N3" edges="EC4 link_C4_C3 CN3" />   					<!-- Through to N3-->
+  <route id="throughE4_S3" edges="EC4 link_C4_C3 CS3" />   					<!-- Through to S3-->
+  <route id="throughE4_N2" edges="EC4 link_C4_C3 link_C3_C2 CN2" />   		<!-- Through to N2-->
+  <route id="throughE4_S2" edges="EC4 link_C4_C3 link_C3_C2 CS2" />   		<!-- Through to S2-->
+  <route id="throughE4_N" edges="EC4 link_C4_C3 link_C3_C2 link_C2_C CN" /> <!-- Through to N-->
+  <route id="throughE4_S" edges="EC4 link_C4_C3 link_C3_C2 link_C2_C CS" /> <!-- Through to S2-->
+  <route id="throughE4_W" edges="EC4 link_C4_C3 link_C3_C2 link_C2_C CW" /> <!-- Through to N2-->
+  
+
+  <flow id="flow_throughW_E4" route="throughW_E4" begin="0" end="25000" vehsPerHour="500" departSpeed="max" departPos="base" departLane="best"/>
+<!-- 
+  <flow id="flow_throughE4_W" route="throughE4_W" begin="0" end="25000" vehsPerHour="500" departSpeed="max" departPos="base" departLane="best"/>
+
+
+  <flow id="flow_throughN_S" route="throughN_S" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughS_N" route="throughS_N" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+
+  <flow id="flow_throughN2_S2" route="throughN2_S2" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughS2_N2" route="throughS2_N2" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+
+  <flow id="flow_throughN3_S3" route="throughN3_S3" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughS3_N3" route="throughS3_N3" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  
+  <flow id="flow_throughS4_N4" route="throughS4_N4" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+  <flow id="flow_throughN4_S4" route="throughN4_S4" begin="0" end="25000" vehsPerHour="350" departSpeed="max" departPos="base" departLane="best"/>
+-->
+
+<!-- 
+  <vType id="test_1" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="50"/>
+
+  <vehicle id="0" type="test_1" route="throughW_E4" depart="0.0" departSpeed="max" departLane="1"/>
+  <vehicle id="1" type="test_1" route="throughW_E4" depart="1.0" departSpeed="max" departLane="1"/>
+  <vehicle id="2" type="test_1" route="throughW_E4" depart="2.0" departSpeed="max" departLane="1"/>
+  <vehicle id="3" type="test_1" route="throughW_E4" depart="3.0" departSpeed="max" departLane="1"/>
+  <vehicle id="4" type="test_1" route="throughW_E4" depart="4.0" departSpeed="max" departLane="1"/>
+  <vehicle id="5" type="test_1" route="throughW_E4" depart="5.0" departSpeed="max" departLane="1"/>
+
+  <vehicle id="6" type="test_1" route="throughW_E4" depart="6.0" departSpeed="max" departLane="1"/>
+  <vehicle id="7" type="test_1" route="throughW_E4" depart="7.0" departSpeed="max" departLane="1"/>
+  <vehicle id="8" type="test_1" route="throughW_E4" depart="8.0" departSpeed="max" departLane="1"/>
+  <vehicle id="9" type="test_1" route="throughW_E4" depart="9.0" departSpeed="max" departLane="1"/>
+  <vehicle id="10" type="test_1" route="throughW_E4" depart="10.0" departSpeed="max" departLane="1"/>
+  <vehicle id="11" type="test_1" route="throughW_E4" depart="11.0" departSpeed="max" departLane="1"/>
+
+  <vehicle id="12" type="test_1" route="throughW_E4" depart="12.0" departSpeed="max" departLane="3"/>
+  <vehicle id="13" type="test_1" route="throughW_E4" depart="13.0" departSpeed="max" departLane="3"/>
+  <vehicle id="14" type="test_1" route="throughW_E4" depart="14.0" departSpeed="max" departLane="3"/>
+  <vehicle id="15" type="test_1" route="throughW_E4" depart="15.0" departSpeed="max" departLane="3"/>
+  <vehicle id="16" type="test_1" route="throughW_E4" depart="16.0" departSpeed="max" departLane="3"/>
+  <vehicle id="17" type="test_1" route="throughW_E4" depart="17.0" departSpeed="max" departLane="3"/>
+-->
+</routes>

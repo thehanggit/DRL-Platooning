@@ -1,0 +1,193 @@
+<flows>
+  <vType id="type1" length="5.0" minGap="2.0" maxSpeed="60.0" vClass="passenger">
+    <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="2" ccAccel="1.5"/>
+  </vType>
+
+
+  <vType id="type2" length="5.0" minGap="2.0" maxSpeed="60.0" vClass="passenger">
+    <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="2" ccAccel="1.5"/>
+  </vType>
+
+
+  <!--flow id="platoon_1" from="m01" to="m34" begin="1.0" end="6.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_1" depart="1.0"  from="m01" end="m34" type="type1" departLane="0" />
+  <trip id="humandriver_2" depart="2.0"  from="m01" end="m34" type="type1" departLane="1" />
+  <trip id="humandriver_3" depart="3.0"  from="m01" end="m34" type="type1" departLane="0" />
+  <trip id="humandriver_4" depart="4.0"  from="m01" end="m34" type="type1" departLane="1" />
+  <trip id="humandriver_5" depart="5.0"  from="m01" end="m34" type="type1" departLane="0" />
+
+  <flow id="platoon_2" from="m43" to="m10" begin="1.5" end="6.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+  <!--flow id="platoon_15" from="n01" to="s34" begin="2.0" end="7.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_6" depart="2.0"  from="n01" end="s34" type="type1" departLane="0" />
+  <trip id="humandriver_7" depart="3.0"  from="n01" end="s34" type="type1" departLane="1" />
+  <trip id="humandriver_8" depart="4.0"  from="n01" end="s34" type="type1" departLane="0" />
+  <trip id="humandriver_9" depart="5.0"  from="n01" end="s34" type="type1" departLane="1" />
+  <trip id="humandriver_10" depart="6.0"  from="n01" end="s34" type="type1" departLane="0" />
+
+  <flow id="platoon_16" from="s43" to="n10" begin="2.5" end="7.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+  <!--flow id="platoon_17" from="s01" to="n34" begin="3.0" end="8.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_11" depart="3.0"  from="s01" end="n34" type="type1" departLane="0" />
+  <trip id="humandriver_12" depart="4.0"  from="s01" end="n34" type="type1" departLane="1" />
+  <trip id="humandriver_13" depart="5.0"  from="s01" end="n34" type="type1" departLane="0" />
+  <trip id="humandriver_14" depart="6.0"  from="s01" end="n34" type="type1" departLane="1" />
+  <trip id="humandriver_15" depart="7.0"  from="s01" end="n34" type="type1" departLane="0" />
+
+  <flow id="platoon_18" from="n43" to="s10" begin="3.5" end="8.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+
+  <flow id="platoon_3" from="m01" to="m34" begin="11.0" end="16.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <!--flow id="platoon_4" from="m43" to="m10" begin="11.5" end="16.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+  <trip id="humandriver_16" depart="11.5"  from="m43" end="m10" type="type1" departLane="0" />
+  <trip id="humandriver_17" depart="12.5"  from="m43" end="m10" type="type1" departLane="1" />
+  <trip id="humandriver_18" depart="13.5"  from="m43" end="m10" type="type1" departLane="0" />
+  <trip id="humandriver_19" depart="14.5"  from="m43" end="m10" type="type1" departLane="1" />
+  <trip id="humandriver_20" depart="15.5"  from="m43" end="m10" type="type1" departLane="0" />
+
+  <flow id="platoon_23" from="n01" to="s34" begin="12.0" end="17.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/>
+  <!--flow id="platoon_24" from="s43" to="n10" begin="12.5" end="17.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+  <trip id="humandriver_21" depart="12.5"  from="s43" end="n10" type="type1" departLane="0" />
+  <trip id="humandriver_22" depart="13.5"  from="s43" end="n10" type="type1" departLane="1" />
+  <trip id="humandriver_23" depart="14.5"  from="s43" end="n10" type="type1" departLane="0" />
+  <trip id="humandriver_24" depart="15.5"  from="s43" end="n10" type="type1" departLane="1" />
+  <trip id="humandriver_25" depart="16.5"  from="s43" end="n10" type="type1" departLane="0" />
+
+  <flow id="platoon_25" from="s01" to="n34" begin="13.0" end="18.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/>
+  <!--flow id="platoon_26" from="n43" to="s10" begin="13.5" end="18.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+  <trip id="humandriver_26" depart="13.5"  from="n43" end="s10" type="type1" departLane="0" />
+  <trip id="humandriver_27" depart="14.5"  from="n43" end="s10" type="type1" departLane="1" />
+  <trip id="humandriver_28" depart="15.5"  from="n43" end="s10" type="type1" departLane="0" />
+  <trip id="humandriver_29" depart="16.5"  from="n43" end="s10" type="type1" departLane="1" />
+  <trip id="humandriver_30" depart="17.5"  from="n43" end="s10" type="type1" departLane="0" />
+
+
+  <!--flow id="platoon_5" from="m01" to="m34" begin="21.0" end="26.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_31" depart="21.0"  from="m01" end="m34" type="type1" departLane="0" />
+  <trip id="humandriver_32" depart="22.0"  from="m01" end="m34" type="type1" departLane="1" />
+  <trip id="humandriver_33" depart="23.0"  from="m01" end="m34" type="type1" departLane="0" />
+  <trip id="humandriver_34" depart="24.0"  from="m01" end="m34" type="type1" departLane="1" />
+  <trip id="humandriver_35" depart="25.0"  from="m01" end="m34" type="type1" departLane="0" />
+
+  <flow id="platoon_6" from="m43" to="m10" begin="21.5" end="26.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--flow id="platoon_31" from="n01" to="s34" begin="22.0" end="27.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_36" depart="22.0"  from="n01" end="s34" type="type1" departLane="0" />
+  <trip id="humandriver_37" depart="23.0"  from="n01" end="s34" type="type1" departLane="1" />
+  <trip id="humandriver_38" depart="24.0"  from="n01" end="s34" type="type1" departLane="0" />
+  <trip id="humandriver_39" depart="25.0"  from="n01" end="s34" type="type1" departLane="1" />
+  <trip id="humandriver_40" depart="26.0"  from="n01" end="s34" type="type1" departLane="0" />
+
+  <flow id="platoon_32" from="s43" to="n10" begin="22.5" end="27.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--flow id="platoon_33" from="s01" to="n34" begin="23.0" end="28.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_41" depart="23.0"  from="s01" end="n34" type="type1" departLane="0" />
+  <trip id="humandriver_42" depart="24.0"  from="s01" end="n34" type="type1" departLane="1" />
+  <trip id="humandriver_43" depart="25.0"  from="s01" end="n34" type="type1" departLane="0" />
+  <trip id="humandriver_44" depart="26.0"  from="s01" end="n34" type="type1" departLane="1" />
+  <trip id="humandriver_45" depart="27.0"  from="s01" end="n34" type="type1" departLane="0" />
+
+  <flow id="platoon_34" from="n43" to="s10" begin="23.5" end="28.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+
+  <flow id="platoon_7" from="m01" to="m34" begin="55.0" end="60.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <!--flow id="platoon_8" from="m43" to="m10" begin="55.5" end="60.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+  <trip id="humandriver_46" depart="55.5"  from="m43" end="m10" type="type1" departLane="0" />
+  <trip id="humandriver_47" depart="56.5"  from="m43" end="m10" type="type1" departLane="1" />
+  <trip id="humandriver_48" depart="57.5"  from="m43" end="m10" type="type1" departLane="0" />
+  <trip id="humandriver_49" depart="58.5"  from="m43" end="m10" type="type1" departLane="1" />
+  <trip id="humandriver_50" depart="59.5"  from="m43" end="m10" type="type1" departLane="0" />
+
+  <flow id="platoon_39" from="n01" to="s34" begin="56.0" end="61.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/>
+  <!--flow id="platoon_40" from="s43" to="n10" begin="56.5" end="61.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+  <trip id="humandriver_51" depart="56.5"  from="s43" end="n10" type="type1" departLane="0" />
+  <trip id="humandriver_52" depart="57.5"  from="s43" end="n10" type="type1" departLane="1" />
+  <trip id="humandriver_53" depart="58.5"  from="s43" end="n10" type="type1" departLane="0" />
+  <trip id="humandriver_54" depart="59.5"  from="s43" end="n10" type="type1" departLane="1" />
+  <trip id="humandriver_55" depart="60.5"  from="s43" end="n10" type="type1" departLane="0" />
+
+  <flow id="platoon_41" from="s01" to="n34" begin="57.0" end="62.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/>
+  <!--flow id="platoon_42" from="n43" to="s10" begin="57.5" end="62.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+  <trip id="humandriver_56" depart="57.5"  from="n43" end="s10" type="type1" departLane="0" />
+  <trip id="humandriver_57" depart="58.5"  from="n43" end="s10" type="type1" departLane="1" />
+  <trip id="humandriver_58" depart="59.5"  from="n43" end="s10" type="type1" departLane="0" />
+  <trip id="humandriver_59" depart="60.5"  from="n43" end="s10" type="type1" departLane="1" />
+  <trip id="humandriver_60" depart="61.5"  from="n43" end="s10" type="type1" departLane="0" />
+
+
+  <!--flow id="platoon_9" from="m01" to="m34" begin="72.0" end="77.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_61" depart="72.0"  from="m01" end="m34" type="type1" departLane="0" />
+  <trip id="humandriver_62" depart="73.0"  from="m01" end="m34" type="type1" departLane="1" />
+  <trip id="humandriver_63" depart="74.0"  from="m01" end="m34" type="type1" departLane="0" />
+  <trip id="humandriver_64" depart="75.0"  from="m01" end="m34" type="type1" departLane="1" />
+  <trip id="humandriver_65" depart="76.0"  from="m01" end="m34" type="type1" departLane="0" />
+
+  <flow id="platoon_10" from="m43" to="m10" begin="72.5" end="77.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--flow id="platoon_47" from="n01" to="s34" begin="73.0" end="78.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_66" depart="73.0"  from="n01" end="s34" type="type1" departLane="0" />
+  <trip id="humandriver_67" depart="74.0"  from="n01" end="s34" type="type1" departLane="1" />
+  <trip id="humandriver_68" depart="75.0"  from="n01" end="s34" type="type1" departLane="0" />
+  <trip id="humandriver_69" depart="76.0"  from="n01" end="s34" type="type1" departLane="1" />
+  <trip id="humandriver_70" depart="77.0"  from="n01" end="s34" type="type1" departLane="0" />
+
+  <flow id="platoon_48" from="s43" to="n10" begin="73.5" end="78.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--flow id="platoon_49" from="s01" to="n34" begin="74.0" end="79.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/-->
+  <trip id="humandriver_71" depart="74.0"  from="s01" end="n34" type="type1" departLane="0" />
+  <trip id="humandriver_72" depart="75.0"  from="s01" end="n34" type="type1" departLane="1" />
+  <trip id="humandriver_73" depart="76.0"  from="s01" end="n34" type="type1" departLane="0" />
+  <trip id="humandriver_74" depart="77.0"  from="s01" end="n34" type="type1" departLane="1" />
+  <trip id="humandriver_75" depart="78.0"  from="s01" end="n34" type="type1" departLane="0" />
+
+  <flow id="platoon_50" from="n43" to="s10" begin="74.5" end="79.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+
+  <flow id="platoon_11" from="m01" to="m34" begin="105.0" end="110.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <flow id="platoon_12" from="m43" to="m10" begin="105.5" end="110.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--
+  <trip id="humandriver_76" depart="105.5"  from="m43" end="m10" type="type1" departLane="0" />
+  <trip id="humandriver_77" depart="106.5"  from="m43" end="m10" type="type1" departLane="1" />
+  <trip id="humandriver_78" depart="107.5"  from="m43" end="m10" type="type1" departLane="0" />
+  <trip id="humandriver_79" depart="108.5"  from="m43" end="m10" type="type1" departLane="1" />
+  <trip id="humandriver_80" depart="109.5"  from="m43" end="m10" type="type1" departLane="0" />
+  -->
+
+  <flow id="platoon_55" from="n01" to="s34" begin="106.0" end="111.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_56" from="s43" to="n10" begin="106.5" end="111.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--
+  <trip id="humandriver_81" depart="106.5"  from="s43" end="n10" type="type1" departLane="0" />
+  <trip id="humandriver_82" depart="107.5"  from="s43" end="n10" type="type1" departLane="1" />
+  <trip id="humandriver_83" depart="108.5"  from="s43" end="n10" type="type1" departLane="0" />
+  <trip id="humandriver_84" depart="109.5"  from="s43" end="n10" type="type1" departLane="1" />
+  <trip id="humandriver_85" depart="110.5"  from="s43" end="n10" type="type1" departLane="0" />
+  -->
+
+  <flow id="platoon_57" from="s01" to="n34" begin="107.0" end="112.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_58" from="n43" to="s10" begin="107.5" end="112.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <!--
+  <trip id="humandriver_86" depart="107.5"  from="n43" end="s10" type="type1" departLane="0" />
+  <trip id="humandriver_87" depart="108.5"  from="n43" end="s10" type="type1" departLane="1" />
+  <trip id="humandriver_88" depart="109.5"  from="n43" end="s10" type="type1" departLane="0" />
+  <trip id="humandriver_89" depart="110.5"  from="n43" end="s10" type="type1" departLane="1" />
+  <trip id="humandriver_90" depart="111.5"  from="n43" end="s10" type="type1" departLane="0" />
+  -->
+
+
+
+  <!--flow id="platoon_13" from="m01" to="m34" begin="105.0" end="110.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <flow id="platoon_14" from="m43" to="m10" begin="105.5" end="110.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</flows>

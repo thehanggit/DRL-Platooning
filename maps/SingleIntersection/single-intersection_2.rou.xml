@@ -1,0 +1,120 @@
+<routes>
+    <route id="route_ns" edges="n_t t_s"/>
+    <route id="route_we" edges="w_t t_e"/>
+    <!-- 
+    <flow id="flow_ns" route="route_ns" begin="0" end="100000" probability="0.2" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="flow_we" route="route_we" begin="0" end="100000" probability="0.5" departSpeed="max" departPos="base" departLane="best"/>
+    -->
+
+
+    <vType id="car" length="5.0" minGap="2.0" maxSpeed="30.0" vClass="passenger">
+      <carFollowing-Krauss accel="3.0" decel="5.0" sigma="0" tau="1.64" />
+    </vType>
+
+    <vType id="bus" length="10.0" minGap="4.0" maxSpeed="15.0" vClass="bus">
+      <carFollowing-Krauss accel="2.0" decel="3.0" sigma="0" tau="2.0" />
+    </vType>
+
+    <vType id="type1" length="5.0" minGap="2.0" maxSpeed="60.0" vClass="passenger">
+	    <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="2" ccAccel="1.5"/>
+    </vType>
+
+    <vType id="type2" length="5.0" minGap="2.0" maxSpeed="60.0" vClass="passenger">
+        <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="2" ccAccel="1.5"/>
+    </vType>
+
+    <vehicle id="veh_0" route="route_we" depart="1.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_1" route="route_we" depart="1.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_2" route="route_we" depart="2.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_3" route="route_we" depart="2.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_4" route="route_we" depart="3.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_5" route="route_we" depart="3.5" type="type2" departSpeed="25" departLane="1"/>
+
+    <vehicle id="veh_6" route="route_we" depart="4.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_7" route="route_we" depart="4.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_8" route="route_we" depart="5.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_9" route="route_we" depart="5.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_10" route="route_we" depart="6.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_11" route="route_we" depart="6.5" type="type2" departSpeed="25" departLane="1"/>
+    
+
+
+    <vehicle id="veh_12" route="route_we" depart="11.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_13" route="route_we" depart="11.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_14" route="route_we" depart="12.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_15" route="route_we" depart="12.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_16" route="route_we" depart="13.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_17" route="route_we" depart="13.5" type="type2" departSpeed="25" departLane="1"/>
+
+    <vehicle id="veh_18" route="route_we" depart="14.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_19" route="route_we" depart="14.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_20" route="route_we" depart="15.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_21" route="route_we" depart="15.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_22" route="route_we" depart="16.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_23" route="route_we" depart="16.5" type="type2" departSpeed="25" departLane="1"/>
+
+
+
+    <vehicle id="veh_24" route="route_we" depart="21.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_25" route="route_we" depart="21.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_26" route="route_we" depart="22.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_27" route="route_we" depart="22.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_28" route="route_we" depart="23.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_29" route="route_we" depart="23.5" type="type2" departSpeed="25" departLane="1"/>
+
+    <vehicle id="veh_30" route="route_we" depart="24.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_31" route="route_we" depart="24.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_32" route="route_we" depart="25.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_33" route="route_we" depart="25.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_34" route="route_we" depart="26.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_35" route="route_we" depart="26.5" type="type2" departSpeed="25" departLane="1"/>
+
+
+
+    <vehicle id="veh_36" route="route_we" depart="55.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_37" route="route_we" depart="55.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_38" route="route_we" depart="56.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_39" route="route_we" depart="56.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_40" route="route_we" depart="57.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_41" route="route_we" depart="57.5" type="type2" departSpeed="25" departLane="1"/>
+
+    <vehicle id="veh_42" route="route_we" depart="58.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_43" route="route_we" depart="58.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_44" route="route_we" depart="59.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_45" route="route_we" depart="59.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_46" route="route_we" depart="60.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_47" route="route_we" depart="60.5" type="type2" departSpeed="25" departLane="1"/>
+
+
+
+    <vehicle id="veh_48" route="route_we" depart="72.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_49" route="route_we" depart="72.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_50" route="route_we" depart="73.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_51" route="route_we" depart="73.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_52" route="route_we" depart="74.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_53" route="route_we" depart="74.5" type="type2" departSpeed="25" departLane="1"/>
+
+    <vehicle id="veh_54" route="route_we" depart="75.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_55" route="route_we" depart="75.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_56" route="route_we" depart="76.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_57" route="route_we" depart="76.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_58" route="route_we" depart="77.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_59" route="route_we" depart="77.5" type="type2" departSpeed="25" departLane="1"/>
+
+
+
+    <vehicle id="veh_60" route="route_we" depart="105.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_61" route="route_we" depart="105.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_62" route="route_we" depart="106.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_63" route="route_we" depart="106.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_64" route="route_we" depart="107.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_65" route="route_we" depart="107.5" type="type2" departSpeed="25" departLane="1"/>
+
+    <vehicle id="veh_66" route="route_we" depart="108.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_67" route="route_we" depart="108.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_68" route="route_we" depart="109.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_69" route="route_we" depart="109.5" type="type2" departSpeed="25" departLane="1"/>
+    <vehicle id="veh_70" route="route_we" depart="110.0" type="type1" departSpeed="25" departLane="0"/>
+    <vehicle id="veh_71" route="route_we" depart="110.5" type="type2" departSpeed="25" departLane="1"/>
+
+</routes>

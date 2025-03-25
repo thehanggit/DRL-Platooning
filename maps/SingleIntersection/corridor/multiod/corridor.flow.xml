@@ -1,0 +1,54 @@
+<flows>
+  <vType id="type1" length="5.0" minGap="2.0" maxSpeed="60.0" vClass="passenger">
+    <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="2" ccAccel="1.5"/>
+  </vType>
+
+
+  <vType id="type2" length="5.0" minGap="2.0" maxSpeed="60.0" vClass="passenger">
+    <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="9" lanesCount="2" ccAccel="1.5"/>
+  </vType>
+
+
+  <flow id="platoon_1" from="w_t1" to="t4_e" begin="1.0" end="6.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_2" from="w_t1" to="t4_e" begin="1.5" end="6.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+  <flow id="platoon_13" from="w_t1" to="t4_s4" begin="6.5" end="11.5" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+
+  <flow id="platoon_3" from="w_t1" to="t4_e" begin="11.0" end="16.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_17" from="n1_t1" to="t4_e" begin="11.5" end="16.5" vehsPerHour="3600" type="type1" departSpeed="25" departLane="1" color="red"/>
+  <flow id="platoon_4" from="w_t1" to="t4_e" begin="11.5" end="16.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+  <flow id="platoon_14" from="w_t1" to="t3_s3" begin="16.0" end="21.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+
+
+
+
+  <flow id="platoon_5" from="w_t1" to="t4_e" begin="21.0" end="26.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_6" from="w_t1" to="t4_e" begin="21.5" end="26.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+  <flow id="platoon_15" from="w_t1" to="t2_s2" begin="26.0" end="31.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_18" from="n2_t2" to="t4_e" begin="26.0" end="31.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="1" color="red"/>
+
+  <flow id="platoon_7" from="w_t1" to="t4_e" begin="55.0" end="60.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_8" from="w_t1" to="t4_e" begin="55.5" end="60.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <flow id="platoon_19" from="n3_t3" to="t4_e" begin="60.0" end="65.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="1" color="red"/>
+
+  <flow id="platoon_9" from="w_t1" to="t4_e" begin="72.0" end="77.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_10" from="w_t1" to="t4_e" begin="72.5" end="77.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <flow id="platoon_16" from="w_t1" to="t1_s1" begin="77.0" end="82.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="0" color="red"/>
+  <flow id="platoon_20" from="n4_t4" to="t4_e" begin="77.0" end="82.0" vehsPerHour="3600" type="type1" departSpeed="25" departLane="1" color="red"/>
+
+  <flow id="platoon_11" from="w_t1" to="t4_e" begin="105.0" end="110.0" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+  <flow id="platoon_12" from="w_t1" to="t4_e" begin="105.5" end="110.5" vehsPerHour="3600" type="type2" departSpeed="25" departLane="1" color="red"/>
+
+
+
+
+
+
+
+
+
+
+
+</flows>

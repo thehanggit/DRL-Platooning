@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-09-03 16:10:07 by Eclipse SUMO duarouter Version v1_11_0+0421-96d1c786f0c
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="corridor.net.xml"/>
+        <route-files value="corridor.flow.xml"/>
+    </input>
+
+    <output>
+        <output-file value="corridor.rou.xml"/>
+        <alternatives-output value="corridor.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="type1" length="5.00" minGap="2.00" maxSpeed="60.00" vClass="passenger" carFollowModel="CC" decel="9" c1="0.5" xi="1" omegaN="0.2" tauEngine="0.5" lanesCount="2" ccAccel="1.5"/>
+    <vehicle id="humandriver_1" type="type1" depart="1.00" departLane="0">
+        <route edges="m01"/>
+    </vehicle>
+    <vType id="type2" length="5.00" minGap="2.00" maxSpeed="60.00" vClass="passenger" carFollowModel="CC" decel="9" c1="0.5" xi="1" omegaN="0.2" tauEngine="0.5" lanesCount="2" ccAccel="1.5"/>
+    <vehicle id="platoon_2.0" type="type2" depart="1.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_2" type="type1" depart="2.00" departLane="1">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_6" type="type1" depart="2.00" departLane="0">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="platoon_16.0" type="type2" depart="2.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_2.1" type="type2" depart="2.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_3" type="type1" depart="3.00" departLane="0">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_7" type="type1" depart="3.00" departLane="1">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_11" type="type1" depart="3.00" departLane="0">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_16.1" type="type2" depart="3.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_18.0" type="type2" depart="3.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_2.2" type="type2" depart="3.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_4" type="type1" depart="4.00" departLane="1">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_8" type="type1" depart="4.00" departLane="0">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_12" type="type1" depart="4.00" departLane="1">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_16.2" type="type2" depart="4.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_18.1" type="type2" depart="4.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_2.3" type="type2" depart="4.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_5" type="type1" depart="5.00" departLane="0">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_9" type="type1" depart="5.00" departLane="1">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_13" type="type1" depart="5.00" departLane="0">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_16.3" type="type2" depart="5.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_18.2" type="type2" depart="5.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_2.4" type="type2" depart="5.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_10" type="type1" depart="6.00" departLane="0">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_14" type="type1" depart="6.00" departLane="1">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_16.4" type="type2" depart="6.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_18.3" type="type2" depart="6.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="humandriver_15" type="type1" depart="7.00" departLane="0">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_18.4" type="type2" depart="7.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_3.0" type="type1" depart="11.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_16" type="type1" depart="11.50" departLane="0">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="platoon_23.0" type="type2" depart="12.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_3.1" type="type1" depart="12.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_17" type="type1" depart="12.50" departLane="1">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_21" type="type1" depart="12.50" departLane="0">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="platoon_23.1" type="type2" depart="13.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_25.0" type="type2" depart="13.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_3.2" type="type1" depart="13.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_18" type="type1" depart="13.50" departLane="0">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_22" type="type1" depart="13.50" departLane="1">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="humandriver_26" type="type1" depart="13.50" departLane="0">
+        <route edges="n43"/>
+    </vehicle>
+    <vehicle id="platoon_23.2" type="type2" depart="14.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_25.1" type="type2" depart="14.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_3.3" type="type1" depart="14.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_19" type="type1" depart="14.50" departLane="1">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_23" type="type1" depart="14.50" departLane="0">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="humandriver_27" type="type1" depart="14.50" departLane="1">
+        <route edges="n43"/>
+    </vehicle>
+    <vehicle id="platoon_23.3" type="type2" depart="15.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_25.2" type="type2" depart="15.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_3.4" type="type1" depart="15.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_20" type="type1" depart="15.50" departLane="0">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_24" type="type1" depart="15.50" departLane="1">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="humandriver_28" type="type1" depart="15.50" departLane="0">
+        <route edges="n43"/>
+    </vehicle>
+    <vehicle id="platoon_23.4" type="type2" depart="16.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_25.3" type="type2" depart="16.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="humandriver_25" type="type1" depart="16.50" departLane="0">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="humandriver_29" type="type1" depart="16.50" departLane="1">
+        <route edges="n43"/>
+    </vehicle>
+    <vehicle id="platoon_25.4" type="type2" depart="17.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="humandriver_30" type="type1" depart="17.50" departLane="0">
+        <route edges="n43"/>
+    </vehicle>
+    <vehicle id="humandriver_31" type="type1" depart="21.00" departLane="0">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="platoon_6.0" type="type2" depart="21.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_32" type="type1" depart="22.00" departLane="1">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_36" type="type1" depart="22.00" departLane="0">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="platoon_32.0" type="type2" depart="22.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_6.1" type="type2" depart="22.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_33" type="type1" depart="23.00" departLane="0">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_37" type="type1" depart="23.00" departLane="1">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_41" type="type1" depart="23.00" departLane="0">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_32.1" type="type2" depart="23.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_34.0" type="type2" depart="23.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_6.2" type="type2" depart="23.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_34" type="type1" depart="24.00" departLane="1">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_38" type="type1" depart="24.00" departLane="0">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_42" type="type1" depart="24.00" departLane="1">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_32.2" type="type2" depart="24.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_34.1" type="type2" depart="24.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_6.3" type="type2" depart="24.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_35" type="type1" depart="25.00" departLane="0">
+        <route edges="m01"/>
+    </vehicle>
+    <vehicle id="humandriver_39" type="type1" depart="25.00" departLane="1">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_43" type="type1" depart="25.00" departLane="0">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_32.3" type="type2" depart="25.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_34.2" type="type2" depart="25.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_6.4" type="type2" depart="25.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="humandriver_40" type="type1" depart="26.00" departLane="0">
+        <route edges="n01"/>
+    </vehicle>
+    <vehicle id="humandriver_44" type="type1" depart="26.00" departLane="1">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_32.4" type="type2" depart="26.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_34.3" type="type2" depart="26.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="humandriver_45" type="type1" depart="27.00" departLane="0">
+        <route edges="s01"/>
+    </vehicle>
+    <vehicle id="platoon_34.4" type="type2" depart="27.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_7.0" type="type1" depart="55.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_46" type="type1" depart="55.50" departLane="0">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="platoon_39.0" type="type2" depart="56.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_7.1" type="type1" depart="56.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_47" type="type1" depart="56.50" departLane="1">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_51" type="type1" depart="56.50" departLane="0">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="platoon_39.1" type="type2" depart="57.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_41.0" type="type2" depart="57.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_7.2" type="type1" depart="57.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_48" type="type1" depart="57.50" departLane="0">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_52" type="type1" depart="57.50" departLane="1">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="platoon_42.0" type="type2" depart="57.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_39.2" type="type2" depart="58.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_41.1" type="type2" depart="58.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_7.3" type="type1" depart="58.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_49" type="type1" depart="58.50" departLane="1">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_53" type="type1" depart="58.50" departLane="0">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="platoon_42.1" type="type2" depart="58.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_39.3" type="type2" depart="59.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_41.2" type="type2" depart="59.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_7.4" type="type1" depart="59.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="humandriver_50" type="type1" depart="59.50" departLane="0">
+        <route edges="m43"/>
+    </vehicle>
+    <vehicle id="humandriver_54" type="type1" depart="59.50" departLane="1">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="platoon_42.2" type="type2" depart="59.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_39.4" type="type2" depart="60.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_41.3" type="type2" depart="60.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="humandriver_55" type="type1" depart="60.50" departLane="0">
+        <route edges="s43"/>
+    </vehicle>
+    <vehicle id="platoon_42.3" type="type2" depart="60.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_41.4" type="type2" depart="61.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_42.4" type="type2" depart="61.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_9.0" type="type1" depart="72.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_10.0" type="type2" depart="72.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_47.0" type="type2" depart="73.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_9.1" type="type1" depart="73.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_10.1" type="type2" depart="73.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_48.0" type="type2" depart="73.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_47.1" type="type2" depart="74.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_49.0" type="type2" depart="74.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_9.2" type="type1" depart="74.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_10.2" type="type2" depart="74.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_48.1" type="type2" depart="74.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_50.0" type="type2" depart="74.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_47.2" type="type2" depart="75.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_49.1" type="type2" depart="75.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_9.3" type="type1" depart="75.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_10.3" type="type2" depart="75.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_48.2" type="type2" depart="75.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_50.1" type="type2" depart="75.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_47.3" type="type2" depart="76.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_49.2" type="type2" depart="76.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_9.4" type="type1" depart="76.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_10.4" type="type2" depart="76.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_48.3" type="type2" depart="76.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_50.2" type="type2" depart="76.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_47.4" type="type2" depart="77.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_49.3" type="type2" depart="77.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_48.4" type="type2" depart="77.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_50.3" type="type2" depart="77.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_49.4" type="type2" depart="78.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_50.4" type="type2" depart="78.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_11.0" type="type2" depart="105.00" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_12.0" type="type2" depart="105.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_11.1" type="type2" depart="106.00" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_55.0" type="type2" depart="106.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_12.1" type="type2" depart="106.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_56.0" type="type2" depart="106.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_11.2" type="type2" depart="107.00" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_55.1" type="type2" depart="107.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_57.0" type="type2" depart="107.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_12.2" type="type2" depart="107.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_56.1" type="type2" depart="107.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_58.0" type="type2" depart="107.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_11.3" type="type2" depart="108.00" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_55.2" type="type2" depart="108.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_57.1" type="type2" depart="108.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_12.3" type="type2" depart="108.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_56.2" type="type2" depart="108.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_58.1" type="type2" depart="108.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_11.4" type="type2" depart="109.00" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m01 m12 m23 m34"/>
+    </vehicle>
+    <vehicle id="platoon_55.3" type="type2" depart="109.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_57.2" type="type2" depart="109.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_12.4" type="type2" depart="109.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="m43 m32 m21 m10"/>
+    </vehicle>
+    <vehicle id="platoon_56.3" type="type2" depart="109.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_58.2" type="type2" depart="109.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_55.4" type="type2" depart="110.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="n01 E2 E3 s12 s23 s34"/>
+    </vehicle>
+    <vehicle id="platoon_57.3" type="type2" depart="110.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_56.4" type="type2" depart="110.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="s43 -E18 -E17 n32 n21 n10"/>
+    </vehicle>
+    <vehicle id="platoon_58.3" type="type2" depart="110.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+    <vehicle id="platoon_57.4" type="type2" depart="111.00" departLane="0" departSpeed="25.00" color="red">
+        <route edges="s01 s12 -E16 -E15 n23 n34"/>
+    </vehicle>
+    <vehicle id="platoon_58.4" type="type2" depart="111.50" departLane="1" departSpeed="25.00" color="red">
+        <route edges="n43 n32 E15 E16 s21 s10"/>
+    </vehicle>
+</routes>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edges>
+
+	<!-- Intersection C -->
+	<edge id="NC" from="N" to="C" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="WC" from="W" to="C" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="SC" from="S" to="C" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CN" from="C" to="N" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CW" from="C" to="W" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CS" from="C" to="S" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+
+	<!-- Intersection C2 -->
+    <edge id="NC2" from="N2" to="C2" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="SC2" from="S2" to="C2" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CN2" from="C2" to="N2" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CS2" from="C2" to="S2" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+
+	<!-- Intersection C3 -->
+    <edge id="NC3" from="N3" to="C3" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="SC3" from="S3" to="C3" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CN3" from="C3" to="N3" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CS3" from="C3" to="S3" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+
+	<!-- Intersection C4 -->
+    <edge id="NC4" from="N4" to="C4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="SC4" from="S4" to="C4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="EC4" from="E4" to="C4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CN4" from="C4" to="N4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CS4" from="C4" to="S4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="CE4" from="C4" to="E4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+
+    <!-- linked edges -->
+    <edge id="link_C_C2" from="C" to="C2" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="link_C2_C" from="C2" to="C" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="link_C2_C3" from="C2" to="C3" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="link_C3_C2" from="C3" to="C2" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="link_C3_C4" from="C3" to="C4" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+    <edge id="link_C4_C3" from="C4" to="C3" numLanes="5" speed="30" priority="2" />
+		<lane index="0" allow="pedestrian" width="3.00"/>
+        <lane index="1" disallow="all" width="1.50"/>
+        <lane index="2" allow="bicycle" width="1.00"/>
+        <lane index="3" disallow="bicycle pedestrian"/>
+        <lane index="4" disallow="bicycle pedestrian"/>
+
+
+</edges>

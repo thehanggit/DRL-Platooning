@@ -1,0 +1,21 @@
+<nodes>
+
+    <node id="C" x="0.00" y="0.00" type="traffic_light" />
+	<node id="W" x="-200.00" y="0.00" />
+    <node id="N" x="0.00" y="200.00" />
+    <node id="S" x="0.00" y="-200.00" />
+
+    <node id="C2" x="200.00" y="0.00" type="traffic_light" />
+    <node id="N2" x="200.00" y="200.00" />
+    <node id="S2" x="200.00" y="-200.00" />
+
+    <node id="C3" x="400.00" y="0.00" type="traffic_light" />
+    <node id="N3" x="400.00" y="200.00" />
+    <node id="S3" x="400.00" y="-200.00" />
+
+    <node id="C4" x="600.00" y="0.00" type="traffic_light" />
+    <node id="E4" x="800.00" y="0.00" />
+    <node id="N4" x="600.00" y="200.00" />
+    <node id="S4" x="600.00" y="-200.00" />
+
+</nodes>

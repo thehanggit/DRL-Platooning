@@ -1,0 +1,36 @@
+    <tlLogic id="m1" type="static" programID="0" offset="30">
+        <phase duration="22" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="22" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="m2" type="static" programID="0" offset="0">
+        <phase duration="22" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="22" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="m3" type="static" programID="0" offset="30">
+        <phase duration="22" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="22" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="n1" type="static" programID="0" offset="25>
+        <phase duration="20" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="24" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="n2" type="static" programID="0" offset="6">
+        <phase duration="24" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="64" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="n3" type="static" programID="0" offset="0">
+        <phase duration="23" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="21" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="s1" type="static" programID="0" offset="0">
+        <phase duration="23" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="21" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="s2" type="static" programID="0" offset="6">
+        <phase duration="24" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="64" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>
+    <tlLogic id="s3" type="static" programID="0" offset="25">
+        <phase duration="20" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="24" state="rrrrGGGgrrrrGGGg"/>
+    </tlLogic>

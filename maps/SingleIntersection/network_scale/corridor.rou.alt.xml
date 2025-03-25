@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-04-25 00:43:32 by Eclipse SUMO duarouter Version v1_16_0+2289-15f2debf49d
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="corridor.net.xml"/>
+        <route-files value="corridor.flow.xml"/>
+    </input>
+
+    <output>
+        <output-file value="corridor.rou.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="type1" length="5.00" minGap="2.00" maxSpeed="60.00" vClass="passenger" carFollowModel="CC" decel="9" c1="0.5" xi="1" omegaN="0.2" tauEngine="0.5" lanesCount="2" ccAccel="1.5"/>
+    <vehicle id="platoon_1.0" type="type1" depart="1.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vType id="type2" length="5.00" minGap="2.00" maxSpeed="60.00" vClass="passenger" carFollowModel="CC" decel="9" c1="0.5" xi="1" omegaN="0.2" tauEngine="0.5" lanesCount="2" ccAccel="1.5"/>
+    <vehicle id="platoon_2.0" type="type2" depart="1.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_1.1" type="type1" depart="2.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_15.0" type="type2" depart="2.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_16.0" type="type2" depart="2.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_2.1" type="type2" depart="2.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_1.2" type="type1" depart="3.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_15.1" type="type2" depart="3.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_17.0" type="type2" depart="3.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_16.1" type="type2" depart="3.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_18.0" type="type2" depart="3.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_2.2" type="type2" depart="3.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_1.3" type="type1" depart="4.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_15.2" type="type2" depart="4.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_17.1" type="type2" depart="4.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_16.2" type="type2" depart="4.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_18.1" type="type2" depart="4.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_2.3" type="type2" depart="4.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_1.4" type="type1" depart="5.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_15.3" type="type2" depart="5.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_17.2" type="type2" depart="5.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_16.3" type="type2" depart="5.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_18.2" type="type2" depart="5.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_2.4" type="type2" depart="5.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_15.4" type="type2" depart="6.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_17.3" type="type2" depart="6.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_16.4" type="type2" depart="6.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_18.3" type="type2" depart="6.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_17.4" type="type2" depart="7.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_18.4" type="type2" depart="7.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_5.0" type="type1" depart="21.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_6.0" type="type2" depart="21.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_31.0" type="type2" depart="22.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_5.1" type="type1" depart="22.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_32.0" type="type2" depart="22.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_6.1" type="type2" depart="22.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_31.1" type="type2" depart="23.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_33.0" type="type2" depart="23.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_5.2" type="type1" depart="23.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_32.1" type="type2" depart="23.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_34.0" type="type2" depart="23.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_6.2" type="type2" depart="23.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_31.2" type="type2" depart="24.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_33.1" type="type2" depart="24.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_5.3" type="type1" depart="24.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_32.2" type="type2" depart="24.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_34.1" type="type2" depart="24.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_6.3" type="type2" depart="24.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_31.3" type="type2" depart="25.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_33.2" type="type2" depart="25.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_5.4" type="type1" depart="25.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_32.3" type="type2" depart="25.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_34.2" type="type2" depart="25.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_6.4" type="type2" depart="25.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_31.4" type="type2" depart="26.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_33.3" type="type2" depart="26.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_32.4" type="type2" depart="26.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_34.3" type="type2" depart="26.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_33.4" type="type2" depart="27.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_34.4" type="type2" depart="27.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_9.0" type="type1" depart="72.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_10.0" type="type2" depart="72.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_47.0" type="type2" depart="73.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_9.1" type="type1" depart="73.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_10.1" type="type2" depart="73.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_48.0" type="type2" depart="73.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_47.1" type="type2" depart="74.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_49.0" type="type2" depart="74.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_9.2" type="type1" depart="74.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_10.2" type="type2" depart="74.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_48.1" type="type2" depart="74.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_50.0" type="type2" depart="74.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_47.2" type="type2" depart="75.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_49.1" type="type2" depart="75.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_9.3" type="type1" depart="75.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_10.3" type="type2" depart="75.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_48.2" type="type2" depart="75.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_50.1" type="type2" depart="75.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_47.3" type="type2" depart="76.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_49.2" type="type2" depart="76.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_9.4" type="type1" depart="76.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m01 m12 m23 m34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_10.4" type="type2" depart="76.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="59.10" probability="1.00000000" edges="m43 m32 m21 m10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_48.3" type="type2" depart="76.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_50.2" type="type2" depart="76.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_47.4" type="type2" depart="77.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n01 E2 E3 s12 s23 s34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_49.3" type="type2" depart="77.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_48.4" type="type2" depart="77.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s43 -E18 -E17 n32 n21 n10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_50.3" type="type2" depart="77.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_49.4" type="type2" depart="78.00" departLane="0" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="s01 s12 -E16 -E15 n23 n34"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="platoon_50.4" type="type2" depart="78.50" departLane="1" departSpeed="25.00" color="red">
+        <routeDistribution last="0">
+            <route cost="88.38" probability="1.00000000" edges="n43 n32 E15 E16 s21 s10"/>
+        </routeDistribution>
+    </vehicle>
+</routes>
